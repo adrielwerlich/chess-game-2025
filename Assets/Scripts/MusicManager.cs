@@ -17,11 +17,6 @@ public class MusicManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             audioSource = gameObject.AddComponent<AudioSource>();
 
-            // if (backgroundMusic == null)
-            // {
-            //     backgroundMusic = Resources.Load<AudioClip>("Sound/CasualRelaxingGameMusic/"); // Ensure you have a BackgroundMusic file in Resources folder
-            // }
-
             audioSource.loop = false;
             audioSource.playOnAwake = true;
             audioSource.volume = 1.0f;
